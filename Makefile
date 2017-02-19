@@ -8,4 +8,4 @@ OPT ?= -O2 -DNDEBUG
 TESTS = \
   src/url_pattern_test
   
-SOURCES = $(wildcard *.cc src/*.cc)
+SOURCES = $(wildcard src/*.cc)
