@@ -7,3 +7,5 @@ OPT ?= -O2 -DNDEBUG
 
 TESTS = \
   src/url_pattern_test
+  
+SOURCES = $(wildcard src/*.cc)
