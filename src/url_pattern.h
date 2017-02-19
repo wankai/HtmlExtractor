@@ -2,6 +2,8 @@
 
 namespace hex {
 
+class MatchResult;
+
 class UrlPattern
 {
  public:
@@ -19,6 +21,11 @@ class UrlPattern
   // clear both path and query regex
   void Reset();
  
+  // match this url_pattern to @target
+  // the extracted values are stored in @match_result
+  bool Match(const std::string& target,
+             MatchResult* match_result,
+             MatchOption opt = MatchOption());
  private:
   std::regex path_regex_;
   std::vector<std::regex> query_regexs_;
