@@ -6,3 +6,4 @@ OPT ?= -O2 -DNDEBUG
 # OPT ?= -O2 -g2 -NDEBUG
 
 TESTS = \
+  src/url_pattern_test
