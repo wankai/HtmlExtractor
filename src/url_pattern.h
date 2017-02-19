@@ -2,8 +2,6 @@
 
 namespace hex {
 
-class MatchResult;
-
 class UrlPattern
 {
  public:
