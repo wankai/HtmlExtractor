@@ -23,8 +23,7 @@ class UrlPattern
  
   // match this url_pattern to @target
   // the extracted values are stored in @match_result
-  bool Match(const std::string& target,
-             MatchResult* match_result);
+  bool Match(const std::string& target, MatchResult* match_result);
 
  private:
   std::regex path_regex_;
